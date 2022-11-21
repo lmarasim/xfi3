@@ -1,0 +1,352 @@
+# Font for window titles:
+font pango: Balsamiq Sans Regular 11
+
+# Define colors variables:
+set $darkbluetrans	#08052be6
+set $darkblue		#08052b
+set $lightblue		#5294e2
+set $urgentred		#e53935
+set $white		#ffffff
+set $black		#000000
+set $purple		#e345ff
+set $darkgrey		#383c4a
+set $grey		#b0b5bd
+set $mediumgrey		#8b8b8b
+set $yellowbrown	#e1b700
+
+# define colors for windows:    (window title)  (window title)  (title text)    (	main window	)
+#class		        	border		bground		text		indicator	child_border
+client.focused			$mediumgrey	$black		$white		$mediumgrey	$mediumgrey
+client.unfocused		$black		$black		$grey		$black		$black
+client.focused_inactive		$black		$black		$grey		$black		$black
+client.urgent			$urgentred	$urgentred	$white		$mediumgrey	$mediumgrey
+
+# set the mod key to the winkey:
+set $mod Mod4
+
+# default i3 tiling mode:
+workspace_layout default
+
+# i3 stacking layout:
+# Each window will be fullscreen and tabbed top to bottom.
+#workspace_layout stacking
+
+# i3 tabbed layout:
+# Each new window will open fullscreen as a tab (left to right)
+#workspace_layout tabbed
+
+#border indicator on windows:
+new_window pixel 1
+
+# thin borders
+# hide_edge_borders both
+
+# Set inner/outer gaps
+gaps inner 16
+gaps outer 0
+
+# show window title bars (not officially supported with i3gaps)
+#default_border normal
+
+# window title alignment
+title_align center
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# switch/iterate between workspaces
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
+# switch to workspace
+bindsym $mod+1    workspace  $ws1
+bindsym $mod+2    workspace  $ws2
+bindsym $mod+3    workspace  $ws3
+bindsym $mod+4    workspace  $ws4
+bindsym $mod+5    workspace  $ws5
+bindsym $mod+6    workspace  $ws6
+bindsym $mod+7    workspace  $ws7
+bindsym $mod+8    workspace  $ws8
+bindsym $mod+g    workspace  $ws9
+bindsym $mod+m    workspace  $ws10
+
+# switch to workspace with numpad keys
+bindcode $mod+87 workspace 1
+bindcode $mod+88 workspace 2
+bindcode $mod+89 workspace 3
+bindcode $mod+83 workspace 4
+bindcode $mod+84 workspace 5
+bindcode $mod+85 workspace 6
+bindcode $mod+79 workspace 7
+bindcode $mod+80 workspace 8
+bindcode $mod+81 workspace 9
+bindcode $mod+90 workspace 10
+
+# switch to workspace with numlock numpad keys
+bindcode $mod+Mod2+87 workspace $ws1
+bindcode $mod+Mod2+88 workspace $ws2
+bindcode $mod+Mod2+89 workspace $ws3
+bindcode $mod+Mod2+83 workspace $ws4
+bindcode $mod+Mod2+84 workspace $ws5
+bindcode $mod+Mod2+85 workspace $ws6
+bindcode $mod+Mod2+79 workspace $ws7
+bindcode $mod+Mod2+80 workspace $ws8
+bindcode $mod+Mod2+81 workspace $ws9
+bindcode $mod+Mod2+90 workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1    move container to workspace  $ws1
+bindsym $mod+Shift+2    move container to workspace  $ws2
+bindsym $mod+Shift+3    move container to workspace  $ws3
+bindsym $mod+Shift+4    move container to workspace  $ws4
+bindsym $mod+Shift+5    move container to workspace  $ws5
+bindsym $mod+Shift+6    move container to workspace  $ws6
+bindsym $mod+Shift+7    move container to workspace  $ws7
+bindsym $mod+Shift+8    move container to workspace  $ws8
+bindsym $mod+Shift+g    move container to workspace  $ws9
+bindsym $mod+Shift+m    move container to workspace  $ws10
+
+# move focused container to workspace with numpad keys
+bindcode $mod+Shift+Mod2+87 	move container to workspace  $ws1
+bindcode $mod+Shift+Mod2+88 	move container to workspace  $ws2
+bindcode $mod+Shift+Mod2+89 	move container to workspace  $ws3
+bindcode $mod+Shift+Mod2+83 	move container to workspace  $ws4
+bindcode $mod+Shift+Mod2+84 	move container to workspace  $ws5
+bindcode $mod+Shift+Mod2+85 	move container to workspace  $ws6
+bindcode $mod+Shift+Mod2+79 	move container to workspace  $ws7
+bindcode $mod+Shift+Mod2+80 	move container to workspace  $ws8
+bindcode $mod+Shift+Mod2+81 	move container to workspace  $ws9
+bindcode $mod+Shift+Mod2+90 	move container to workspace  $ws10
+
+# move focused container to workspace with numpad keys
+bindcode $mod+Shift+87 	 move container to workspace  $ws1
+bindcode $mod+Shift+88 	 move container to workspace  $ws2
+bindcode $mod+Shift+89 	 move container to workspace  $ws3
+bindcode $mod+Shift+83 	 move container to workspace  $ws4
+bindcode $mod+Shift+84 	 move container to workspace  $ws5
+bindcode $mod+Shift+85 	 move container to workspace  $ws6
+bindcode $mod+Shift+79 	 move container to workspace  $ws7
+bindcode $mod+Shift+80 	 move container to workspace  $ws8
+bindcode $mod+Shift+81 	 move container to workspace  $ws9
+bindcode $mod+Shift+90 	 move container to workspace  $ws10
+
+# resize window (you can also use the mouse for that):
+mode "resize" {
+# These bindings trigger as soon as you enter the resize mode
+# Pressing left will shrink the window's width.
+# Pressing right will grow the window's width.
+# Pressing up will shrink the window's height.
+# Pressing down will grow the window's height.
+#        bindsym j resize shrink width 10 px or 10 ppt
+#        bindsym k resize grow height 10 px or 10 ppt
+#        bindsym l resize shrink height 10 px or 10 ppt
+#        bindsym ntilde resize grow width 10 px or 10 ppt
+
+# same bindings, but for the arrow keys
+	bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+# back to normal: Enter or Escape
+	bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# start a terminal
+bindsym $mod+Return exec xfce4-terminal
+
+# kill focused window
+bindsym $mod+q kill
+
+# exit-menu
+bindsym $mod+o exec --no-startup-id ~/.config/i3/scripts/powermenu
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to update i3)
+bindsym $mod+Shift+r restart && i3 fullscreen toggle && i3 fullscreen toggle
+
+# Backlight control
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +10 #&& notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -10 #&& notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+c split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacked
+#bindsym $mod+g layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# open new empty workspace
+bindsym $mod+Shift+n exec --no-startup-id ~/.config/i3/scripts/empty_workspace
+
+# audio control
+bindsym XF86AudioPlay exec --no-startup-id playerctl play
+bindsym XF86AudioPause exec --no-startup-id playerctl pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+
+# Redirect sound to headphones
+# bindsym $mod+p exec /usr/local/bin/switch-audio-port
+
+## App shortcuts
+bindsym $mod+w exec /usr/bin/firefox-developer-edition
+bindsym $mod+Shift+w exec /usr/bin/google-chrome-stable --incognito
+bindsym $mod+n exec /usr/bin/thunar
+bindsym Print exec --no-startup-id xfce4-screenshooter -r
+bindsym ctrl+Print exec --no-startup-id xfce4-screenshooter -r -c
+
+# Power Profiles menu switcher (rofi)
+bindsym $mod+p exec --no-startup-id ~/.config/i3/scripts/power-profiles
+
+# Define names for default workspaces:
+set $ws1 " 1:  "
+set $ws2 " 2:  "
+set $ws3 " 3:  "
+set $ws4 " 4:  "
+set $ws5 " 5:  "
+set $ws6 " 6:  "
+set $ws7 " 7:  "
+set $ws8 " 8:  "
+set $ws9 " G:  "
+set $ws10 " M:  "
+
+assign [class="Xfce4-terminal"] $ws1
+assign [class="firefoxdeveloperedition"] $ws2
+assign [class="Google-chrome"] $ws9
+assign [class="discord"] $ws3
+assign [class="Steam"] $ws4
+assign [class="dota2"] $ws4
+assign [class="VirtualBox Manager"] $ws10
+assign [class="VirtualBox Machine"] $ws10
+assign [class="Virt-manager"] $ws10
+
+for_window [class="Xfce4-terminal"] focus
+for_window [class="firefoxdeveloperedition"] focus
+for_window [class="discord"] focus
+for_window [class="Google-chrome"] focus
+for_window [class="Steam"] focus
+for_window [class="VirtualBox Manager"] focus
+for_window [class="VirtualBox Machine"] focus
+for_window [class="Virti-manager"] focus
+
+####### autostart  ######
+
+# picom startup
+exec_always --no-startup-id picom -CGb --config  ~/.config/picom.conf
+
+#get auth work with polkit-gnome
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+#i3 env startup
+exec --no-startup-id dex --autostart --environment i3
+
+#xfce4 panel startup
+exec --no-startup-id xfce4-panel
+
+# num lock activated
+#exec --no-startup-id numlockx on
+
+# set wallpaper
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.png
+
+# set powersavings for display 
+# exec --no-startup-id xset s 480 dpms 600 600 600
+
+# use xautolock to use autosuspend rules for mobile devices
+# https://wiki.archlinux.org/title/Session_lock#xautolock
+#exec --no-startup-id xautolock -time 60 -locker "systemctl suspend"
+
+# Desktop notifications
+exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
+# alternative if you installed aside with XFCE4:
+# exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
+
+# autotiling script
+exec_always --no-startup-id autotiling
+
+# xfce4-power-manager
+exec_always --no-startup-id xfce4-power-manager
+
+# clipman-applet
+exec --no-startup-id xfce4-clipman
+
+
+###### floating rules ######
+
+# set floating (nontiling) for apps needing it
+for_window [class="Yad" instance="yad"] floating enable
+for_window [class="Galculator" instance="galculator"] floating enable
+for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
+
+# set floating (nontiling) for special apps
+for_window [class="Xsane" instance="xsane"] floating enable
+for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
+for_window [class="qt5ct" instance="qt5ct"] floating enable
+for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
+for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
+for_window [class="Pamac-manager"] floating enable
+for_window [window_role="About"] floating enable
+for_window [class="Thunar"] floating enable
+for_window [class="File-roller"] floating enable
+for_window [class="Lxappearance"] floating enable
+
+for_window [class="Xfce4-panel"] floating enable
+for_window [class="Gthumb"] floating enable
+for_window [class="Steam"] floating enable
+
+# set border of floating window
+for_window [class="urxvt"] border pixel 1
+
+# rofi demnu
+bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun \
+		-config ~/.config/rofi/rofidmenu.rasi
+
+# rofi window switcher
+bindsym $mod+t exec --no-startup-id rofi -show window \
+		-config ~/.config/rofi/rofidmenu.rasi
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="true"/>
+    <property name="panel-1" type="empty">
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.029893"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.210000"/>
+        <value type="double" value="0.576512"/>
+      </property>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="icon-size" type="uint" value="16"/>
+      <property name="length" type="uint" value="30"/>
+      <property name="length-adjust" type="bool" value="false"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="14"/>
+        <value type="int" value="17"/>
+        <value type="int" value="18"/>
+        <value type="int" value="20"/>
+        <value type="int" value="9"/>
+        <value type="int" value="13"/>
+        <value type="int" value="4"/>
+        <value type="int" value="6"/>
+        <value type="int" value="8"/>
+        <value type="int" value="2"/>
+      </property>
+      <property name="position" type="string" value="p=6;x=960;y=15"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="30"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="clipman" type="empty">
+      <property name="settings" type="empty">
+        <property name="save-on-quit" type="bool" value="false"/>
+      </property>
+      <property name="tweaks" type="empty">
+        <property name="inhibit" type="bool" value="true"/>
+        <property name="never-confirm-history-clear" type="bool" value="false"/>
+      </property>
+    </property>
+    <property name="plugin-13" type="string" value="xfce4-sensors-plugin"/>
+    <property name="plugin-14" type="string" value="pager">
+      <property name="miniature-view" type="bool" value="false"/>
+      <property name="rows" type="uint" value="1"/>
+    </property>
+    <property name="plugin-17" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-18" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-2" type="string" value="clock">
+      <property name="digital-format" type="string" value="%m/%d/%Y %l:%M %P "/>
+      <property name="timezone" type="string" value=""/>
+      <property name="tooltip-format" type="string" value="%A, %B %d %Y"/>
+    </property>
+    <property name="plugin-20" type="string" value="tasklist">
+      <property name="flat-buttons" type="bool" value="false"/>
+      <property name="grouping" type="uint" value="1"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="show-labels" type="bool" value="true"/>
+    </property>
+    <property name="plugin-4" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="hidden-items" type="array">
+      </property>
+      <property name="hidden-legacy-items" type="array">
+        <value type="string" value="clipman"/>
+      </property>
+      <property name="icon-size" type="int" value="16"/>
+      <property name="known-items" type="array">
+        <value type="string" value="qBittorrent"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="discord1"/>
+      </property>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="requesting an ethernet network address for “wired connection 1”…"/>
+        <value type="string" value="vmware-tray"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="ethernet network connection “wired connection 1” active"/>
+        <value type="string" value="clipman"/>
+      </property>
+      <property name="menu-is-primary" type="bool" value="false"/>
+      <property name="single-row" type="bool" value="false"/>
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="symbolic-icons" type="bool" value="false"/>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="firefox.instance105545;firefox.instance107845;firefox.instance111453;firefox.instance112134;firefox.instance121587;firefox.instance13373;firefox.instance135665;firefox.instance158594;firefox.instance200630;firefox.instance223288;firefox.instance2542;firefox.instance2644;firefox.instance287813;firefox.instance338756;firefox.instance3548;firefox.instance38407;firefox.instance45187;firefox.instance5219;firefox.instance58160;firefox.instance58620;firefox.instance87743;firefox.instance92412"/>
+      <property name="play-sound" type="bool" value="false"/>
+    </property>
+    <property name="plugin-9" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+  </property>
+</channel>

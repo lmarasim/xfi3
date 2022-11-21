@@ -1,0 +1,11 @@
+use_css=false
+normal_color=rgb(119,118,123)
+focused_color=rgb(255,255,255)
+urgent_color=rgb(255,80,80)
+mode_color=rgb(255,80,80)
+visible_color=rgb(119,118,123)
+css=.workspace { }\n.workspace.visible { }\n.workspace.focused { \n\tcolor: white;\n\tbackground: #000;\n}\n.workspace.urgent { color: red; }\n.binding-mode { }\n
+strip_workspace_numbers=false
+auto_detect_outputs=true
+output=HDMI-A-0
+
