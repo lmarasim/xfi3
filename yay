@@ -8,10 +8,8 @@ dmenu
 dunst
 file-roller
 galculator
-gthumb
 gtk-engine-murrine
-gvfs
-gvfs-afc
+gvfs gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
@@ -25,7 +23,7 @@ lxappearance-gtk3
 mpv
 network-manager-applet
 numlockx
-pavucontrol
+avucontrol
 picom
 playerctl
 polkit-gnome
@@ -38,31 +36,28 @@ thunar-volman
 tumbler
 xbindkeys
 xdg-user-dirs-gtk
-sublime-text-4
 xfce4-terminal
 xorg-xbacklight
 xorg-xdpyinfo
-ttf-cascadia-code
 ttf-ubuntu-font-family
+ttf-cascadia-code
 autotiling
 xfce4-panel
 xfce4-pulseaudio-plugin
 xfce4-sensors-plugin
-xfce4-power-manager
 xfce4-cpufreq-plugin
 xfce4-screenshooter
 xfce4-clipman-plugin
 xfce4-panel-profiles
 lxtask-gtk3
-pinta dotnet-runtime-6.0
+pinta
+dotnet-runtime-6.0
 firefox-developer-edition
 google-chrome
 zsh
-tmatrix adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
 arc-gtk-theme
 qogir-icon-theme
 feh
 neofetch
 github-cli
-nano
 xorg-xinput
